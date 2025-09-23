@@ -1,110 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Hjem - StandaData</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <header>
-        <menu class="menu">
-            <video id="pageBackground_c1dmp_video" class="menu__video" crossorigin="anonymous" playsinline="" preload="auto" muted="" loop="" autoplay="" src="https://video.wixstatic.com/video/11062b_4a2523cc714b43feb5ae9de13dac1ad4/1080p/mp4/file.mp4" ></video>
-        </menu>
-        <div>
-            <a href="mailto:"></a>
-            <a href="tel:+"></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-        </div>
-    </header>
-    <section>
-        <div>
-            <h1>Digitalisering</h1>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <h2>VHS/VHSC</h2>
-                    <ul>
-                        <li>VHS/VHSC filmene konverteres til MP4 filer av høyeste kvalitet.</li>
-                    </ul>
-                    <button>Kr. 250,- inkl. mva. per enhet uansett lengde*</button>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h2>Dias/Lysbilde med ramme</h2>
-                    <ul>
-                        <li>Digitalisering fra fra DIAS/Lysbilde til jpg (Alle priser er inkl. mva. og gjelder alle lysbildene. Eksempel: 700 lysbilder koster 2 x 700,- = 1.400,- kr. inkl. mva.)</li>
-                    </ul>
-                    <button>1-99 lysbilder = Kr. 10,- per lysbilde *</button>
-                    <button>100-199 lysbilder = Kr. 5,- per lysbilde *</button>
-                    <button>200 eller flere lysbilder = 2 kr. per lysbilde fra *</button>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h2>DVD og CD</h2>
-                    <ul>
-                        <li>Digitalisering fra DVD/CD til mp4 eller den formatet som er på platene av høyeste kvalitet.</li>
-                        <li>Forventes at platene DVD/CD fungerer før levering/sending.</li>
-                    </ul>
-                    <button>Kr. 50,- inkl. mva. per enhet*</button>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h2>DV</h2>
-                    <ul>
-                        <li>DV filmene konverteres til MP4 filer av høyeste kvalitet.</li>
-                    </ul>
-                    <button>Kr. 250,- inkl. mva. per enhet uansett lengde*</button>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h2>Super8 8mm</h2>
-                    <ul>
-                        <li>Super8 filmene konverteres til MP4 filer av høyeste kvalitet.</li>
-                    </ul>
-                    <button>Kr. 250,- inkl. mva. per enhet uansett lengde*</button>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <h2><span>*</span> Viktig informasjon</h2>
-                <ul>
-                    <li>Digitalisering utføres for alle. Du velger selv om du ønsker å sende det i Posten/Postnord eller om du vil levere dine medier selv.</li>
-                    <li>StrandaData tar IKKE ansvar for medier som blir ødelagt i transport eller blir borte i transport.</li>
-                    <li>Alle sender anbefales sendt med sporing.</li>
-                    <li>I prisen er det inkludert digital lagring i sky og her vil man få tilsendt en lenke til sin egen mappe.</li>
-                    <li>Ønsker man å få i retur mediene, så må man selv dekke frakten. Her ettersendes faktura med porto. Her brukes alltid Posten sin Norgespakke med sporing.</li>
-                    <li>Ønsker man å få filene på en minnepinne/ekstern hardisk, så tilkommer dette.</li>
-                </ul>
-                <p>Enhetene sendes til:
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <video
+        id=""
+        class="header__video"
+        crossorigin="anonymous"
+        playsinline=""
+        preload="auto"
+        muted=""
+        loop=""
+        autoplay=""
+        src="https://video.wixstatic.com/video/11062b_4a2523cc714b43feb5ae9de13dac1ad4/1080p/mp4/file.mp4"
+      ></video>
 
-                    ​
-                    
-                    StrandaData
-                    
-                    v/Lars-Thørner Woie
-                    
-                    Dalevegen 88
-                    
-                    6200 Stranda
-                    
-                    Tlf. 40638518</p>
-            </div>
+      <menu class="menu">
+        <!-- <div class="menu__menu"> -->
+        <img class="menu__logo" src="./images/logstra.avif" />
+        <a type="button" href="mailto:" class="menu__button-up">
+          Digitalisering (VHS, DV, DIAS...osv.)
+        </a>
+        <div class="menu__button">
+          <a class="menu__button-t" href="mailto:"
+            ><span class="menu__button-color">post@strandadata.no</span>
+          </a>
+          <a class="menu__button-w" href="tel:+">tlf/WhatsApp/sms: 40638518</a>
         </div>
+        <!-- </div> -->
+      </menu>
+      <div>
+        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+    </header>
+
+    <section class="section">
+      <div>
+        <h1>Digitalisering</h1>
+        <div>
+          <div>
+            <img src="" alt="" />
+            <h2>VHS/VHSC</h2>
+            <ul>
+              <li>
+                VHS/VHSC filmene konverteres til MP4 filer av høyeste kvalitet.
+              </li>
+            </ul>
+            <button>Kr. 250,- inkl. mva. per enhet uansett lengde*</button>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h2>Dias/Lysbilde med ramme</h2>
+            <ul>
+              <li>
+                Digitalisering fra fra DIAS/Lysbilde til jpg (Alle priser er
+                inkl. mva. og gjelder alle lysbildene. Eksempel: 700 lysbilder
+                koster 2 x 700,- = 1.400,- kr. inkl. mva.)
+              </li>
+            </ul>
+            <button>1-99 lysbilder = Kr. 10,- per lysbilde *</button>
+            <button>100-199 lysbilder = Kr. 5,- per lysbilde *</button>
+            <button>
+              200 eller flere lysbilder = 2 kr. per lysbilde fra *
+            </button>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h2>DVD og CD</h2>
+            <ul>
+              <li>
+                Digitalisering fra DVD/CD til mp4 eller den formatet som er på
+                platene av høyeste kvalitet.
+              </li>
+              <li>
+                Forventes at platene DVD/CD fungerer før levering/sending.
+              </li>
+            </ul>
+            <button>Kr. 50,- inkl. mva. per enhet*</button>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h2>DV</h2>
+            <ul>
+              <li>DV filmene konverteres til MP4 filer av høyeste kvalitet.</li>
+            </ul>
+            <button>Kr. 250,- inkl. mva. per enhet uansett lengde*</button>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h2>Super8 8mm</h2>
+            <ul>
+              <li>
+                Super8 filmene konverteres til MP4 filer av høyeste kvalitet.
+              </li>
+            </ul>
+            <button>Kr. 250,- inkl. mva. per enhet uansett lengde*</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="" alt="" />
+        </div>
+        <div>
+          <h2><span>*</span> Viktig informasjon</h2>
+          <ul>
+            <li>
+              Digitalisering utføres for alle. Du velger selv om du ønsker å
+              sende det i Posten/Postnord eller om du vil levere dine medier
+              selv.
+            </li>
+            <li>
+              StrandaData tar IKKE ansvar for medier som blir ødelagt i
+              transport eller blir borte i transport.
+            </li>
+            <li>Alle sender anbefales sendt med sporing.</li>
+            <li>
+              I prisen er det inkludert digital lagring i sky og her vil man få
+              tilsendt en lenke til sin egen mappe.
+            </li>
+            <li>
+              Ønsker man å få i retur mediene, så må man selv dekke frakten. Her
+              ettersendes faktura med porto. Her brukes alltid Posten sin
+              Norgespakke med sporing.
+            </li>
+            <li>
+              Ønsker man å få filene på en minnepinne/ekstern hardisk, så
+              tilkommer dette.
+            </li>
+          </ul>
+          <p>
+            Enhetene sendes til: ​ StrandaData v/Lars-Thørner Woie Dalevegen 88
+            6200 Stranda Tlf. 40638518
+          </p>
+        </div>
+      </div>
     </section>
     <footer>
-        <p>StrandaData 2025</p>
-        <button type="button">GDPR</button>
+      <p>StrandaData 2025</p>
+      <button type="button">GDPR</button>
     </footer>
-</body>
+  </body>
 </html>

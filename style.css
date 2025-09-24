@@ -44,13 +44,10 @@ button {
 body {
   font-size: 16px;
   letter-spacing: 0.03em;
-  /* color: var(--text-color-p);
-  background-color: var(--body-background-color); */
   margin: 0;
   padding: 0;
 }
 .header {
-  /* margin: 0 0 1000px 0; */
   padding: 0;
 }
 
@@ -61,34 +58,19 @@ body {
   flex-direction: column;
   gap: 20px;
   position: absolute;
-  /* margin: 0 auto; */
   z-index: 100;
   text-align: center;
   top: 150px;
-  /* height: 100%; */
-  width: 100%;
+   width: 100%;
 }
 .header__video {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  /* object-position: center center; */
   opacity: 1;
   position: relative;
   z-index: -10;
 }
-
-/* .menu__menu {
-    display: flex;
-    justify-content: center;
-align-items: center;
-flex-direction: column;
-gap: 20px;
-    position:relative;
-    margin: 0 auto;
-  z-index: 100;  
-  text-align: center;
-} */
 
 .menu__logo {
   width: 600px;
@@ -122,10 +104,9 @@ gap: 20px;
   transition: inherit;
   font-size: 16px;
   display: initial;
-  font-family: futura-lt-w01-light, sans-serif;
+  font-family: "Noto Sans", sans-serif;
   letter-spacing: 0.05em;
   color: #281a39;
-  font-weight: 700;
 }
 
 .menu__button-w:hover,
@@ -144,7 +125,6 @@ gap: 20px;
 .menu__button-up {
   width: 388px;
   height: 40px;
-  /* background-color: #fcfb92; */
   border: 4px solid #fcfb92;
   border-radius: 5px;
   text-align: center;
@@ -159,10 +139,8 @@ gap: 20px;
 }
 
 .menu__a {
-  /* display: block; */
   transition: inherit;
   font-size: 16px;
-  /* display: initial; */
   font-family: futura-lt-w01-light, sans-serif;
   letter-spacing: 0.05em;
   color: #281a39;
@@ -181,9 +159,36 @@ gap: 20px;
   width: 100%;
 }
 
-/* .section {
-    margin: 100px;
-    padding: 0;
-    position:relative;
-    z-index: 0;
-} */
+.section {
+  margin: 50px 100px;
+}
+/* ========================== digitalisering ============================= */
+
+.digitalisering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.digitalisering__items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.digitalisering__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 320px;
+}
+
+.digitaliserin__img {
+  width: 300px;
+  height: 400px;
+}

@@ -46,6 +46,10 @@ body {
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(white, rgb(126, 126, 126));
+  background-image: url(./images/9c7184_fda26576f56340969470bcea493c6980~mv2.avif);
 }
 .header {
   padding: 0;
@@ -161,6 +165,7 @@ body {
 
 .section {
   margin: 50px 100px;
+  
 }
 /* ========================== digitalisering ============================= */
 

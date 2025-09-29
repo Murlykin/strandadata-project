@@ -49,7 +49,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(white, rgb(126, 126, 126));
-  background-image: url(./images/9c7184_fda26576f56340969470bcea493c6980~mv2.avif);
+  background-image: url(./images/background1.jpg);
+  
 }
 .header {
   padding: 0;
@@ -181,16 +182,24 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 20px;
+  gap: 5px;
+
+
 }
 
 .digitalisering__item {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 5px;
   width: 320px;
+  opacity: 0.9;
+  background-image: linear-gradient(white, rgb(126, 126, 126));
+  padding: 10px;
+  width: 300px;
+  height: 629px;
 }
 
 .digitaliserin__img {

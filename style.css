@@ -31,10 +31,12 @@ p {
 }
 
 ul,
-ol {
+ol,
+li {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style: none;
 }
 
 button {
@@ -49,7 +51,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(white, rgb(126, 126, 126));
-  background-image: url(./images/background1.jpg);
+  background-image: url(./images/maxresdefault.png);
   
 }
 .header {
@@ -105,7 +107,6 @@ body {
   text-align: center;
   padding-top: 10px;
   color: #281a39;
-
   transition: inherit;
   font-size: 16px;
   display: initial;
@@ -182,27 +183,37 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 5px;
-
-
+  gap: 16px;
 }
 
 .digitalisering__item {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: baseline;
   flex-direction: column;
-  flex-wrap: wrap;
-  gap: 5px;
-  width: 320px;
+  /* flex-wrap: wrap; */
+  gap: 15px;
   opacity: 0.9;
-  background-image: linear-gradient(white, rgb(126, 126, 126));
-  padding: 10px;
-  width: 300px;
-  height: 629px;
+  background-image: linear-gradient(#c0bcbd, #989598);
+  padding: 10px 24px;
+  width: 250px;
+  height: 650px;
 }
 
 .digitaliserin__img {
-  width: 300px;
-  height: 400px;
+  width: 200px;
+  height: 250px;
+  align-items: center;
 }
+
+.digitalisering__h1 {
+    line-height: 1.2em;
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+
+.digitalisering__h2 {
+    padding-bottom: 28px; 
+}
+

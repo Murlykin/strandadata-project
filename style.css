@@ -256,6 +256,7 @@ body {
     width: 100%;
     transition: transform 250ms var(--timing-functione);
     transform: translateY(101%);
+    opacity: 0.33;
   }
 
 .digitaliserin__conteiner-text {
@@ -271,7 +272,7 @@ body {
     
 }
 .digitaliserin__conteiner-text1{
-    padding: 24px 20px;
+    padding: 22px 20px;
 }
 .digitalisering__decoration {
     text-decoration: none;
@@ -288,7 +289,7 @@ body {
   .digitalisering__picture-decoration:hover .digitaliserin__paragraph,
   .digitalisering__picture-decoration:focus .digitaliserin__paragraph {
     transform: translateY(0);
-    opacity: 1;
+    opacity: 0.8;
   }
 /* ========================= footer ============================== */
 

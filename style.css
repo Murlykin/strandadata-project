@@ -52,7 +52,7 @@ body {
   background-size: cover;
   background-image: linear-gradient(white, rgb(126, 126, 126));
   background-image: url(./images/maxresdefault.png);
-  
+
 }
 .header {
   padding: 0;
@@ -217,3 +217,14 @@ body {
     padding-bottom: 28px; 
 }
 
+
+
+/* ========================= footer ============================== */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: linear-gradient(#c0bcbd, #989598); 
+}

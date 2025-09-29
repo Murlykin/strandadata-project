@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <title>Hjem - StandaData</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -25,7 +26,7 @@
         autoplay=""
         src="https://video.wixstatic.com/video/11062b_4a2523cc714b43feb5ae9de13dac1ad4/1080p/mp4/file.mp4"
       ></video>
-
+      <main>
       <menu class="menu">
         <!-- <div class="menu__menu"> -->
         <img class="menu__logo" src="./images/logstra.avif" />
@@ -51,7 +52,7 @@
     </header>
 
     <section class="section">
-      <div class="digitalisering" id="digitalisering">
+      <div class="digitalisering animate__animated animate__fadeInUp wow"  data-wow-offset="100" id="digitalisering">
         <h1 class="digitalisering__h1">Digitalisering</h1>
         <div class="digitalisering__items">
           <div class="digitalisering__item">
@@ -117,12 +118,13 @@
           </div>
         </div>
       </div>
-      <div>
+    </section>
+      <section class="section">
         <div>
           <img src="" alt="" />
         </div>
         <div>
-          <h2><span>*</span> Viktig informasjon</h2>
+          <h2><span>*</span>Viktig informasjon</h2>
           <ul>
             <li>
               Digitalisering utføres for alle. Du velger selv om du ønsker å
@@ -155,9 +157,14 @@
         </div>
       </div>
     </section>
-    <footer>
+    </main>
+    <footer class="footer">
       <p>StrandaData 2025</p>
       <button type="button">GDPR</button>
     </footer>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

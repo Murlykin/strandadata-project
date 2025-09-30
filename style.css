@@ -208,11 +208,9 @@ body {
   justify-content: flex-start;
   align-items: baseline;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   gap: 15px;
   opacity: 0.9;
   background-image: linear-gradient(#c0bcbd, #989598);
-  /* padding: 10px 24px; */
   width: 250px;
   height:450px;
 }
@@ -228,12 +226,36 @@ body {
     text-align: center;
     font-size: 60px;
     padding-bottom: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 4px rgba(0,0,0, 0.2); 
+    position: relative;
+    top: 0px;
+    left: 0px;
+    cursor: default;
+    z-index: 1; 
 }
 
-/* .digitalisering__h2 {
-    padding-bottom: 28px; 
-} */
+.digitalisering__h1  span:hover {
+    text-shadow: -8px 8px 0 rgba(0,0,0, 0.2); 
+    color: #000;
+    top: -8px;
+    left: 8px;
+    z-index: 2; 
+}
+@media screen and (max-width: 767px) {
+    .digitalisering__h1 span {
+        font-size: 28px;
 
+    }
+}
+
+.digitalisering__h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2em;
+        text-align: center;
+}
 
 /* ================================================================================================ */
 .digitalisering__discript{
@@ -274,6 +296,10 @@ body {
 .digitaliserin__conteiner-text1{
     padding: 22px 20px;
 }
+
+.digitaliserin__conteiner-text:hover {
+    color: #ffffff;
+}
 .digitalisering__decoration {
     text-decoration: none;
   }
@@ -284,6 +310,13 @@ body {
     font-size: 18px;
     line-height: 28px;
   }
+
+.digitalisering__decoration:hover,
+.digitalisering__decoration:focus {
+  display: block;
+  box-shadow: 0px 3px 3px rgba(252, 252, 252, 0.12), 0px 6px 6px rgba(255, 255, 255, 0.06),
+    1px 5px 8px rgba(255, 252, 252, 0.16);
+}
 
   
   .digitalisering__picture-decoration:hover .digitaliserin__paragraph,

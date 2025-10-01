@@ -27,3 +27,18 @@
       refs.modal.classList.toggle("is-hidden");
     }
   })();
+
+  (() => {
+    const gdpr = {
+      openModalBtn: document.querySelector("[modal-open]"),
+      closeModalBtn: document.querySelector("[modal-close]"),
+      modal: document.querySelector("[modal]"),
+    };
+  
+    gdpr.openModalBtn.addEventListener("click", toggleModal);
+    gdpr.closeModalBtn.addEventListener("click", toggleModal);
+  
+    function toggleModal() {
+      gdpr.modal.classList.toggle("is-hidden");
+    }
+  })();

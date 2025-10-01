@@ -134,11 +134,12 @@
                                     kvalitet.</p>
 
                                 <button>Kr. 250,- inkl. mva. per enhet uansett lengde*</button>
-                            </div></div>
-                            <div class="digitaliserin__conteiner-text">
-                                <h2 class="digitalisering__h2">DV</h2>
                             </div>
-                        
+                        </div>
+                        <div class="digitaliserin__conteiner-text">
+                            <h2 class="digitalisering__h2">DV</h2>
+                        </div>
+
                     </div>
                 </div>
 
@@ -151,20 +152,81 @@
                                     Super8 filmene konverteres til MP4 filer av høyeste kvalitet.
                                 </p>
 
-                                <button>Kr. 250,- inkl. mva. per enhet uansett lengde*</button>
+                                <button type="button" data-modal-open>Kr. 250,- inkl. mva. per enhet uansett
+                                    lengde*</button>
+
+
                             </div>
-                        </div>    
-                            <div class="digitaliserin__conteiner-text">
-                                <h2 class="digitalisering__h2">Super8 8mm</h2>
-                            </div>
-                        
+                        </div>
+                        <div class="digitaliserin__conteiner-text">
+                            <h2 class="digitalisering__h2">Super8 8mm</h2>
+                        </div>
+
                     </div>
                 </div>
-            </div></div>
+            </div>
     </section>
 
-
-
+    <!------------------------- Modal ----------------------------------------->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <form class="form">
+                <h2 class="form-text ">Legg igjen opplysningene dine, så tar vi kontakt med deg</h2>
+                <div class="form-field">
+                    <label for="name" class="form-label">Navn</label>
+                    <div class="form-icon">
+                        <input class="form-input" type="text" name="name" id="name" />
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+    
+                <div class="form-field">
+                    <label for="tel" class="form-label">Telefon</label>
+                    <div class="form-icon">
+                        <input type="tel" class="form-input" name="tel" id="tel" />
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-phone-2"></use>
+                        </svg>
+                    </div>
+                </div>
+    
+                <div class="form-field">
+                    <label for="mail" class="form-label">E-post</label>
+                    <div class="form-icon">
+                        <input type="email" class="form-input" name="mail" id="mail" />
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-email-2"></use>
+                        </svg>
+                    </div>
+                </div>
+    
+                <div class="form-field">
+                    <label for="comment" class="comment-label">Kommentar</label>
+                    <textarea name="comment" class="comment-input" id="comment" placeholder="Skriv inn tekst" cols="30"
+                        rows="10"></textarea>
+                </div>
+    
+                <div class="agree-field">
+                    <label for="agree" class="agree-label">
+                        <input type="checkbox" class="agree-input" name="agree" id="agree" />
+                        <span class="icone"></span>
+                        Jeg godtar nyhetsbrevet og aksepterer&nbsp
+                        <a href="#" class="dek">Avtalevilkårene</a>
+                    </label>
+                </div>
+                <button type="submit" class="modal-button">Send</button>
+                <!-- <p class="text-backdrop" lang="en">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatum ab aliquid aperiam ea quaerat
+        quae,
+        distinctio placeat laborum hic.</p> -->
+                <button type="button" class="close-button" data-modal-close>
+                    <svg class="close-img" width="18" height="18">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+        </div>
+    </div>
     <section class="section">
         <div>
             <img src="" alt="" />
@@ -212,7 +274,8 @@
     <script>
         new WOW().init();
     </script>
-        <script src="./js/hover.js"></script>
+    <script src="./js/hover.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

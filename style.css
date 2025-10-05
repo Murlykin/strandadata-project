@@ -60,7 +60,7 @@ body {
     --beckground-color: #2196f3;
     --text-color-p: #757575;
     --body-background-color: #ffffff;
-    --button-hover-focus: #188ce8;
+    --button-hover-focus: #760404;
     --footer-bacground-color: #2f303a;
     --teams-bacground-color: #f5f4fa;
     --border-color: #eeeeee;
@@ -445,6 +445,24 @@ body {
     border-color: transparent;
     transition: background-color 250ms var(--timing-functione);
   }
+  .button-modal:hover,
+  .button-modal:focus {
+    background-color: var(--button-hover-focus);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+/* =============================================================== */
+@keyframes soft-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: .5; } 
+  }
+  
+  .informasjon__h2  {
+    animation: soft-blink 2s linear infinite; 
+    color: #fcfb92;
+  }
+  
+  
 /* ========================= footer ============================== */
 
 .footer {

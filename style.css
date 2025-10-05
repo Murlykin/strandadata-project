@@ -185,7 +185,7 @@ body {
 }
 
 .section {
-    margin: 10px 50px;
+    margin: 0 50px;
 
 }
 
@@ -409,6 +409,11 @@ body {
   .modal-button:hover {
     background: #005bb5;
   }
+  .open-modal {
+    cursor: pointer;
+    text-decoration: none;
+  } 
+
 
   .modal__text {
     max-width: 600px;
@@ -430,11 +435,9 @@ body {
     color: var(--body-background-color);
     background-color: var(--beckground-color);
     display: inline-block;
-    /* margin-top: 28px; */
     padding: 2px 5px;
     min-width: 200px;
     font-family: inherit;
-
     font-size: 12px;
     line-height: 1.87;
     letter-spacing: 0.06em;

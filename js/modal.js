@@ -1,44 +1,34 @@
-(() => {
-    const refs = {
-      openModalBtn: document.querySelector("[data-modal-open]"),
-      closeModalBtn: document.querySelector("[data-modal-close]"),
-      modal: document.querySelector("[data-modal]"),
-    };
-  
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-  
-    function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
-    }
-  })();
+document.addEventListener("DOMContentLoaded", () => {
+  const openButtons = document.querySelectorAll(".open-modal");
 
-  (() => {
-    const refs = {
-      openModalBtn: document.querySelector("[data-modal-open1]"),
-      closeModalBtn: document.querySelector("[data-modal-close1]"),
-      modal: document.querySelector("[data-modal1]"),
-    };
-  
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-  
-    function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
-    }
-  })();
+  // открытие нужного модального окна
+  openButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const modalSelector = button.getAttribute("data-modal"); // какой модал открывать
+      const title = button.getAttribute("data-modal-title");   // какой заголовок вставить
+      const modal = document.querySelector(modalSelector);
 
-  (() => {
-    const gdpr = {
-      openModalBtn: document.querySelector("[modal-open]"),
-      closeModalBtn: document.querySelector("[modal-close]"),
-      modal: document.querySelector("[modal]"),
-    };
-  
-    gdpr.openModalBtn.addEventListener("click", toggleModal);
-    gdpr.closeModalBtn.addEventListener("click", toggleModal);
-  
-    function toggleModal() {
-      gdpr.modal.classList.toggle("is-hidden");
-    }
-  })();
+      if (!modal) return;
+
+      const modalTitle = modal.querySelector(".form-text");
+      if (modalTitle) modalTitle.textContent = title;
+
+      modal.classList.remove("is-hidden");
+    });
+  });
+
+  // закрытие по кнопке [x]
+  document.querySelectorAll("[data-modal-close]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const modal = btn.closest(".backdrop");
+      if (modal) modal.classList.add("is-hidden");
+    });
+  });
+
+  // закрытие по клику на фон
+  document.querySelectorAll(".backdrop").forEach(modal => {
+    modal.addEventListener("click", e => {
+      if (e.target === modal) modal.classList.add("is-hidden");
+    });
+  });
+});

@@ -185,7 +185,7 @@ body {
 }
 
 .section {
-    margin: 0 50px;
+    margin: 20px 50px 0 ;
 
 }
 
@@ -216,12 +216,12 @@ body {
     opacity: 0.9;
     background-image: linear-gradient(#c0bcbd, #989598);
     width: 250px;
-    height: 460px;
+    height: 430px;
 }
 
 .digitaliserin__img {
     width: 250px;
-    height: 360px;
+    height: 330px;
     align-items: center;
 }
 
@@ -314,8 +314,10 @@ body {
 .digitaliserin__curd-discript {
     margin: 0;
     color: var(--body-background-color);
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 18px;
+    padding-bottom: 5px;
+    font-weight: bold; 
 }
 
 .digitalisering__decoration:hover,
@@ -419,8 +421,15 @@ body {
     max-width: 600px;
     width: 500px;
     height: 100%;
-  } 
+} 
+.modal__text-p {
+    padding: 5px 0; 
+}
+.modal__text-p-bold {
+    padding: 5px 0;
+    font-weight: bold; 
 
+}
   .form-text{
     font-weight: 700;
     font-size: 20px;

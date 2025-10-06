@@ -36,7 +36,7 @@ li {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
-    list-style: none;
+    /* list-style: none; */
 }
 
 button {
@@ -186,7 +186,6 @@ body {
 
 .section {
     margin: 20px 50px 0 ;
-
 }
 
 /* ========================== digitalisering ============================= */
@@ -466,7 +465,7 @@ body {
 /* =============================================================== */
 @keyframes soft-blink {
     0%, 100% { opacity: 1; }
-    50% { opacity: .5; } 
+    70% { opacity: .5; } 
   }
   
   .informasjon__h2  {
@@ -474,7 +473,27 @@ body {
     color: #fcfb92;
   }
   
-  
+/* ========================== informasjon ================================= */
+.section__informasjon  {
+    margin: 15px 30px 0 ;
+}
+
+.informasjon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;  
+}
+.informasjon__img {
+    width: 200px;
+}
+.informasjon__til {
+   display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    gap: 5px;  
+}
 /* ========================= footer ============================== */
 
 .footer {

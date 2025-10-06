@@ -185,7 +185,7 @@ body {
 }
 
 .section {
-    margin: 20px 50px 0 ;
+    margin: 20px 20px 0 ;
 }
 
 /* ========================== digitalisering ============================= */
@@ -214,12 +214,12 @@ body {
     gap: 15px;
     opacity: 0.9;
     background-image: linear-gradient(#c0bcbd, #989598);
-    width: 250px;
+    width: 280px;
     height: 430px;
 }
 
 .digitaliserin__img {
-    width: 250px;
+    width: 280px;
     height: 330px;
     align-items: center;
 }
@@ -444,7 +444,8 @@ body {
     background-color: var(--beckground-color);
     display: inline-block;
     padding: 2px 5px;
-    min-width: 200px;
+    width: 220px;
+    height: 50px;
     font-family: inherit;
     font-size: 12px;
     line-height: 1.87;
@@ -491,7 +492,6 @@ body {
    display: flex;
     justify-content: space-around;
     flex-direction: column;
-    
     gap: 5px;  
 }
 /* ========================= footer ============================== */
